@@ -1,0 +1,67 @@
+#news {
+  padding-top: 70px;
+  padding-bottom: 300px;
+  .row {
+    .news__link {
+      padding-top: 70px;
+      a:nth-child(1) {
+        color: #b0b0b0;
+      }
+      a:nth-child(2) {
+        color: #BB2339;
+      }
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 19px;
+      /* identical to box height */
+
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+
+      color: #b0b0b0;
+    }
+    .news__title {
+    
+      padding-bottom: 8px;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 130%;
+      /* or 83px */
+
+      letter-spacing: 0.03em;
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+
+      color: #242424;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    .card__title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      /* or 133% */
+
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+
+      color: #242424;
+      .card-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #aaaaaa;
+      }
+    }
+    .btn {
+      border-radius: 20px;
+      width: 150px;
+    }
+  }
+}

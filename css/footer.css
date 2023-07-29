@@ -1,0 +1,63 @@
+.footer {
+  color: white;
+  background-color: #bb2339;
+}
+.footer .newsletter {
+  width: 1200px;
+  height: 400px;
+  position: relative;
+  bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+  background-color: #bb2339;
+}
+.footer .newsletter .newsletter__email {
+  width: 600px;
+  height: 48px;
+  background-color: #bb2339;
+  border-radius: 30px;
+  border: 2px solid #f5efdb;
+  margin-right: 50px;
+  color: white;
+}
+.footer .newsletter button {
+  width: 131px;
+  height: 48px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+.footer .inform p {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.footer .inform address {
+  margin-top: 150px;
+}
+.footer .logo {
+  width: 100%;
+}
+.footer .design {
+  position: relative;
+  bottom: 40px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  color: rgb(132, 132, 172);
+}
+@media screen and (max-width: 576px) {
+  .footer .newsletter {
+    width: 50%;
+    height: 200%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer .newsletter {
+    display: none;
+  }
+}

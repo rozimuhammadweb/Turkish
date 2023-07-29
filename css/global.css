@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(../../fonts/Montserrat-Bold.ttf);
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  background: #bb2339;
+}
+.navbar .nav-item {
+  padding-left: 40px;
+}
+.navbar a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.navbar .btn {
+  margin-left: 80px;
+  border-radius: 20px;
+  width: 131px;
+  height: 48px;
+}

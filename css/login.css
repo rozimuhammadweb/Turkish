@@ -1,0 +1,337 @@
+/*Resetting the form*/
+$primary-color: #E91E63;
+$foreground-color: #fff;
+$link-color: #EC407A;
+$border-width: 1px;
+$title-color: #880e4f;
+
+html, form, a, body, div, input, label, button{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+}
+
+
+
+a{
+  text-decoration: none;
+  color: $link-color;
+}
+
+/*Setting Defaults*/
+body{
+  font-family: Roboto, san-serif;
+  font-size: 16px;
+  color: #444;
+}
+
+.logo{
+  position: fixed;
+  left: 0;
+  top:0;
+  width: 100%;
+  background-color: #fff;
+  div{
+    max-width: 360px;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 5px;
+  }
+  span{
+
+  display: block;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  background-color: #f9f9f9;
+  color: #666;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 0 0 4px 4px;
+  //border: 1px solid rgba(0,0,0,.4);
+  border-top: 0;
+    &:before{
+      content: "Focus On the input";
+    }
+  }
+}
+
+.main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.title{
+  h1{
+    font-weight: normal;
+    line-height: 0;
+    font-size: 44px;
+    color: $primary-color;
+  }
+  p{
+    color: #666;
+    line-height: 1;
+  }
+  margin-bottom: 30px;
+}
+
+.title, form{
+  display: block;
+  width: 100%;
+}
+
+.container{
+  width: 90%;
+  max-width: 360px;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 60px 0;
+  min-height: 400px;
+}
+
+div.input{
+  margin-bottom: 15px;
+  label{
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    span{
+      line-height: 50px;
+      
+    }
+  }
+  input{
+    height: 50px;
+    float: right;
+    width: 70%;
+    border: 1px solid #666;
+  }
+}
+
+div.others{
+  
+  div.forgot-password{
+    display: block;
+    margin: 15px 5%;
+    font-size: 15px;
+    a{
+      text-decoration: underline;
+    }
+  }
+}
+
+div.input.activated{
+  
+  label{
+    display: block;
+    height: 0;  
+    line-height: 60px;
+    color: #666;
+    overflow: visible;
+    span{
+      position: relative;
+      bottom: 0;
+      display: inline-block;
+      margin: 0 5px;
+      transition: all 1s;
+      padding: 0 10px;
+    }
+  }
+  
+  input{
+    float: none;
+    display: block;
+    margin: 0;
+    padding: 0 15px;
+    width: 100%;
+    height: 60px;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    &:-webkit-autofill{
+      /*Tiny Hack*/
+      box-shadow:inset 0 0 1000px 100px #fff;
+    }
+  }
+  
+  &.active, &.passive{
+    label{  
+      span{
+        bottom: 30px;
+        font-size: 12px;
+        line-height: 10px;
+        background-color: #fff;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+button{
+  margin: 20px 5% 0 auto;
+  display: block;
+  width: 120px;
+  height: 50px;
+  border: 0;
+  background-color: #eee;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 5px;
+  span{
+      background-color: $primary-color;
+      color: $foreground-color;
+      display: block;
+      height: 100%;
+      line-height: 40px;
+      border-radius: 20px;
+  }
+}
+
+/*Our Cool Borders*/
+.activated{
+.borders{
+    height: 0;
+    position: relative;
+    .top, .left, .right, .bottom {
+      float: none;
+      height: 0;
+      .content{
+        width: 100%;
+        height: $border-width;
+        background-color: #ddd;
+        .bdr{
+          height: 100%;
+          width: 0;
+          background-color: $primary-color;
+          transition: width 1s, height 1s;
+        }
+      }
+    }
+  
+    .left, .right{
+      width: $border-width;
+      .content{
+        height: 60px;
+        width: $border-width;
+        .bdr{
+          height: 0;
+          width: 100%;
+          transition-delay: 1s;
+        }
+      }
+    }
+  
+  .right{
+    margin: 0 0 0 auto; 
+  }
+  
+  .left{
+    .content{
+       display: flex;
+      .bdr{
+        margin-top: auto;
+      }
+    }
+    
+  }
+  
+  .bottom{
+    position: relative;
+    top: 59px;
+    .content > .bdr{
+      margin: 0 0 0 auto;
+    }
+  }
+}
+}
+.active, .passive{
+  & > .borders{
+    .top, .left, .right, .bottom {
+      .content{
+        .bdr{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.sign-up-bar{
+  margin: 20px 0 0;
+  text-align: center;
+  line-height: 40px;
+  
+  border-radius: 50px;
+  a{
+    display: block;
+  }
+  span{
+    color: #777;
+  }
+  @media screen and (min-height:600px){
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fafafa;
+  }
+}
+
+.check-element{
+  margin: 15px 5%;
+  font-size: 15px;
+  input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .check-box{
+    display: block;
+    width: 100px;
+    height: 0;
+  }
+  label{
+    display: block;
+    margin: 0 0 0 80px;
+    line-height: 30px;
+  }
+  &.activated{
+    input[type="checkbox"]{
+      display: none;
+    }
+    .checker{
+      display: block;
+      width: 60px;
+      height: 30px;
+      background-color: #eee;
+      border-radius: 20px;
+      padding: 5px;
+      cusror: pointer;
+      .checker-block{
+        margin: 0 0 0 0;
+        height: 20px;
+        width: 20px;
+        background-color: $primary-color;
+        border-radius: 50%;
+        opacity: .4;
+        transition: all 1s;
+      }
+      
+    }
+  }
+  &.active{
+    .checker{
+      .checker-block{
+        margin: 0 0 0 auto;
+        opacity: 1;
+      }
+    }
+  }
+}

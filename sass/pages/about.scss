@@ -1,0 +1,36 @@
+#about {
+  padding: 100px;
+
+  .container {
+  }
+  .about__title {
+    padding-top: 70px;
+   
+      font-size: 32px;
+      line-height: 130%;
+      text-align: right;
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: #242424;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+  }
+  .about__subtitle {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 160% */
+
+    letter-spacing: 0.04em;
+
+    color: #242424;
+
+    opacity: 0.8;
+  }
+
+ 
+}
+

@@ -1,0 +1,277 @@
+#hero {
+  background: #bb2339;
+  padding-top: 0px;
+  padding-bottom: 150px;
+}
+#hero .hero__left {
+  padding-top: 50px;
+}
+#hero .hero__left .hero__left__title {
+  padding-bottom: 0px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+}
+#hero .hero__left .hero__left__subtitle {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 130%;
+  /* or 117px */
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+#hero .hero__left .hero__left__describtion {
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  opacity: 0.7;
+}
+#hero .hero__left .btn {
+  border-radius: 20px;
+  width: 150px;
+}
+#hero .hero__rigth {
+  padding-top: 83px;
+}
+#hero .hero__rigth img {
+  width: 100%;
+}
+
+#menu {
+  padding-top: 120px;
+}
+#menu .menu__title {
+  padding-bottom: 60px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #bb2339;
+}
+#menu .card {
+  background: #AAAAAA;
+}
+#menu .card .card__text {
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #242424;
+}
+#menu .card .card__price {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #bb2339;
+}
+
+#menu__collect .menu__collect__title {
+  padding-top: 200px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 48px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  /* qizil */
+  color: #bb2339;
+}
+#menu__collect .btn {
+  border-radius: 20px;
+}
+
+.card .card__text {
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #242424;
+}
+.card .card__price {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #bb2339;
+}
+
+.row #menu__collect .menu__collect__title {
+  padding-top: 200px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #bb2339;
+}
+.row #menu__collect .btn {
+  border-radius: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .row .btn {
+    display: none;
+  }
+}
+
+#customers .customers__title {
+  padding-top: 220px;
+  padding-bottom: 8px;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#customers .customers__subtitle {
+  padding-bottom: 60px;
+  font-size: 48px;
+  line-height: 130%;
+  /* or 62px */
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+#news {
+  padding-top: 200px;
+}
+#news .news__title {
+  font-size: 23px;
+  line-height: 130%;
+  /* identical to box height, or 30px */
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#news .news__subtitle {
+  padding-top: 8px;
+  padding-bottom: 60px;
+  font-size: 48px;
+  line-height: 130%;
+  /* or 62px */
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  /* qizil */
+  color: #bb2339;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+#news .card__title {
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#news .card__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #aaaaaa;
+}
+#news .btn {
+  border-radius: 20px;
+  width: 150px;
+}
+#news .btn__news {
+  margin-top: 70px;
+}
+
+#video {
+  padding-top: 120px;
+}
+#video .btn {
+  margin-top: 50px;
+  width: 200px;
+  border-radius: 20px;
+}
+#video .modal__video {
+  max-width: 1200px;
+}
+
+#gallery {
+  padding-left: 100px;
+  padding-bottom: 300px;
+  padding-top: 100px;
+}
+#gallery .gallery__left__title {
+  font-size: 23px;
+  line-height: 130%;
+  /* identical to box height, or 30px */
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#gallery .gallery__left__subtitle {
+  font-size: 48px;
+  line-height: 130%;
+  /* or 62px */
+  text-align: start;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+#gallery p {
+  font-size: 16px;
+  line-height: 175%;
+  /* or 28px */
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#gallery .btn {
+  border-radius: 20px;
+  width: 150px;
+}

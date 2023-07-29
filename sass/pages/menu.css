@@ -1,0 +1,108 @@
+#menus {
+  padding-bottom: 200px;
+  padding-top: 70px;
+}
+#menus .news__link {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #b0b0b0;
+}
+#menus .news__link a:nth-child(1) {
+  color: #b0b0b0;
+}
+#menus .news__link a:nth-child(2) {
+  color: #bb2339;
+}
+#menus .row .menus__left {
+  background: #bb2339;
+  width: 428px;
+  height: 844px;
+  border-radius: 20px;
+  padding-left: 30px;
+}
+#menus .row .menus__left .btn {
+  width: 180px;
+  border-radius: 20px;
+}
+#menus .row .menus__title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  /* qizil */
+  color: white;
+}
+#menus .row .card .card__text {
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #242424;
+}
+#menus .row .card .card__price {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #bb2339;
+}
+
+#gallery {
+  padding-left: 50px;
+  padding-bottom: 300px;
+  padding-top: 100px;
+}
+#gallery .gallery__left__title {
+  font-size: 23px;
+  line-height: 130%;
+  /* identical to box height, or 30px */
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#gallery .gallery__left__subtitle {
+  font-size: 48px;
+  line-height: 130%;
+  /* or 62px */
+  text-align: start;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+#gallery p {
+  font-size: 16px;
+  line-height: 175%;
+  /* or 28px */
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#gallery .btn {
+  border-radius: 20px;
+  width: 150px;
+}/*# sourceMappingURL=menu.css.map */
